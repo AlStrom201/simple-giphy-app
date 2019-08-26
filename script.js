@@ -106,7 +106,7 @@ function appendGif(gifURL) {
   let html = `<a href="${gifURL}" class="gif">
           <img
             class="gif-img none"
-            src="/images/loading.gif"
+            src="images/loading.gif"
             data-src="${gifURL}"
 
           />
@@ -144,6 +144,7 @@ function reset() {
   clearGIF();
   document.getElementById('js-error').classList.remove('error-show');
   let resetModel = {
+    rating: model.rating,
     gifs: model.gifs,
     searchField: model.searchField,
     limit: 4,
