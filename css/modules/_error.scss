@@ -1,0 +1,10 @@
+.error {
+  display: none;
+  grid-column: 2/3;
+  width: 100%;
+  text-align: center;
+}
+
+.error-show {
+  display: block;
+}

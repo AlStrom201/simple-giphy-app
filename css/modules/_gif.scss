@@ -1,0 +1,14 @@
+.gif {
+  display: block;
+  img {
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.none {
+  background: gray;
+  height: 200px;
+  width: 200px;
+}

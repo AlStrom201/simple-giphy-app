@@ -1,0 +1,22 @@
+.gif-list {
+  display: grid;
+  grid-template-columns: auto minmax(0rem, 63rem) auto;
+}
+
+.c-gif {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.2rem;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .c-gif {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.2rem;
+  }
+}

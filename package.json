@@ -1,0 +1,21 @@
+{
+  "name": "giphy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.1.1",
+    "tachyons-sass": "^4.9.5"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "gulp": "^4.0.2",
+    "normalize.css": "^8.0.1",
+    "tachyons": "^4.11.1"
+  }
+}
