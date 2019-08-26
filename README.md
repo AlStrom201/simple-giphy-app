@@ -10,6 +10,7 @@ Search and View Trending GIFS from giphy made with the giphy API.
 * Pure Javascript
 * GIPHY API
 * Git and Github Pages
+* Little bit of CSS tachyons
 
 
 # Problems I had to solve 
@@ -38,6 +39,7 @@ The GIPHY API has a built-in offset parameter in the request. So I used that eve
 * XHR and FETCH
 * Intersection Observer
 * Lazy Loading 
+* tachyons
 
 
 
