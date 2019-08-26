@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="search">
+      <h2
+        class="trending-btn bw0 pa2 pointer bg-black white f4 link dib dim mv2"
+        id="js-back-trending"
+      >
+        <-- Back to trending
+      </h2>
+      <input
+        id="js-search"
+        type="text"
+        placeholder="Search GIF..."
+        class="search-box tc"
+      />
+      <button class="bw0 pa2 pointer bg-black white f4 link dib dim mv2">
+        Search
+      </button>
+    </section>
+
+    <section class="header" id="js-header">
+      <h1 class="tracked f2 b ma0">TRENDING</h1>
+    </section>
+
+    <section class="gif-list pt4">
+      <h1 class="error" id="js-error">Test123</h1>
+      <div class="c-gif w-100" id="js-list"></div>
+
+      <div class="load bw0 w-100">
+        <button
+          id="js-load"
+          class="f3 b br3 link dim ph5 pv3 mb2 dib white bg-black bw0 pointer"
+        >
+          Load More...
+        </button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
