@@ -106,7 +106,7 @@ function appendGif(gifURL) {
   let html = `<a href="${gifURL}" class="gif">
           <img
             class="gif-img none"
-            src="/images/loading.gif"
+            src="images/loading.gif"
             data-src="${gifURL}"
 
           />
