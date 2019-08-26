@@ -1,11 +1,11 @@
 const API_KEY = 'lLq1u2VZFOrm5xQ0zvpccPqc2GepOS84';
-const RATING = 'G';
 
 let model = {
   gifs: [],
   searchField: '',
   limit: 4,
-  offset: 0
+  offset: 0,
+  rating: 'G'
 };
 
 //lazy load observer
@@ -33,7 +33,7 @@ function getTrending(observeImg) {
   document.querySelector('#js-back-trending').classList.remove('trending-show');
   document.querySelector('#js-header').style.display = 'flex';
   fetch(
-    `https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=${model.limit}&rating=G`
+    `https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=${model.limit}&rating=${model.rating}`
   )
     .then(response => {
       return response.json();
@@ -51,7 +51,7 @@ function getSearch(observeImg) {
   document.querySelector('#js-back-trending').classList.add('trending-show');
   document.querySelector('#js-header').style.display = 'none';
   fetch(
-    `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${model.searchField}&limit=${model.limit}&offset=0&rating=${RATING}&lang=en1`
+    `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${model.searchField}&limit=${model.limit}&offset=0&rating=${model.rating}&lang=en1`
   )
     .then(response => {
       return response.json();
@@ -77,14 +77,16 @@ function loadMore(observeImg) {
       'GET',
       `https://api.giphy.com/v1/gifs/search?api_key=${API_KEY}&q=${
         model.searchField
-      }&limit=${model.limit}&rating=${RATING}&offset=${(model.offset += 4)}`
+      }&limit=${model.limit}&rating=${
+        model.rating
+      }&offset=${(model.offset += 4)}`
     );
   } else {
     req.open(
       'GET',
       `https://api.giphy.com/v1/gifs/trending?api_key=${API_KEY}&limit=${
         model.limit
-      }&rating=${RATING}&offset=${(model.offset += 4)}`
+      }&rating=${model.rating}&offset=${(model.offset += 4)}`
     );
   }
 

@@ -13,9 +13,6 @@
     "tachyons-sass": "^4.9.5"
   },
   "devDependencies": {
-    "grunt": "^1.0.4",
-    "gulp": "^4.0.2",
-    "normalize.css": "^8.0.1",
-    "tachyons": "^4.11.1"
+    "gulp": "^4.0.2"
   }
 }
