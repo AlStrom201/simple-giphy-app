@@ -144,6 +144,7 @@ function reset() {
   clearGIF();
   document.getElementById('js-error').classList.remove('error-show');
   let resetModel = {
+    rating: model.rating,
     gifs: model.gifs,
     searchField: model.searchField,
     limit: 4,
