@@ -103,7 +103,7 @@ function loadMore(observeImg) {
 // Main way to interact with the DOM.
 // This function inserts GIF into the document.
 function appendGif(gifURL) {
-  let html = `<a href="${gifURL}" class="gif">
+  let html = `<a href="${gifURL}" class="gif" target="_blank">
           <img
             class="gif-img none"
             src="images/loading.gif"
